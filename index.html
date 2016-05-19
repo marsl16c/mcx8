@@ -2,10 +2,12 @@
 <html>
     <head>
       <title>DENON DJ | MCX8000</title>
+        <meta charset="utf-8">
 
       <!-- UI KIT -->
       <link rel="stylesheet" href="uikit/css/uikit.min.css" />
       <link rel="stylesheet" href="uikit/css/components/sticky.min.css" />
+      <link rel="stylesheet" href="uikit/css/components/slideshow.min.css" />
 
       <link rel="stylesheet" href="uikit/css/style.css" />
 
@@ -16,42 +18,45 @@
 
       <script src="uikit/js/uikit.min.js"></script>
       <script src="uikit/js/components/sticky.min.js"></script>
+      <script src="uikit/js/components/parallax.min.js"></script>
+      <script src="uikit/js/components/slideshow.min.js"></script>
+      <script src="uikit/js/components/slideshow-fx.min.js"></script>
+      <script src="uikit/js/components/lightbox.min.js"></script>
 
 
       <!-- fullpage -->
 
-          <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-          <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-          <script src="vendors/jquery.easings.min.js"></script>
+      <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+      <script src="vendors/jquery.easings.min.js"></script>
 
-          <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-          <script type="text/javascript" src="js/fullpage/vendores/jquery.slimscroll.min.js"></script>
-          <script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
+      <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+      <script type="text/javascript" src="js/fullpage/vendores/jquery.slimscroll.min.js"></script>
+      <script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
 
       <!-- vegas.js backgroundslideshow -->
 
-          <link rel="stylesheet" href="js/vegas/vegas.min.css">
-          <script src="js/vegas/vegas.min.js"></script>
+      <link rel="stylesheet" href="js/vegas/vegas.min.css">
+      <script src="js/vegas/vegas.min.js"></script>
 
       <!-- BOOTSTRAP -->
 
-          <!-- Latest compiled and minified CSS -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-          <!-- Optional theme -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+      integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-          <!-- Latest compiled and minified JavaScript -->
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-           integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+       integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-        <!-- Gfonts -->
-         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+      <!-- Gfonts -->
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,700,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     </head>
     <body>
@@ -73,10 +78,13 @@
 
 
 
-      <!-- ***** PART 03 ****** -->
+      <!-- ***** PART 02 ****** -->
 
-      <div class="row textblock">
-        <div class="col-md-6 col-md-offset-3 textblock">
+      <div class="row textblock box">
+        <div class="row">
+        <div class="col-md-6 col-md-offset-3 header" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">Übersicht</div></div>
+
+        <div class="col-md-6 col-md-offset-3 textblock" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
           <h3>MACH DICH FREI – KEIN COMPUTER BENÖTIGT</h3>
 
           <p>Ja! Übernehme die DJ Kanzel mit dem brandneuen Denon DJ MCX8000 und
@@ -111,7 +119,7 @@
           der optional erhältlichen DVS Expansion wird MCX8000 zum vollwertigen
           Digital Vinyl System.</p>
 
-          <h3>SUPERSCHNELLER WECHSEL</h3>
+        <h3>SUPERSCHNELLER WECHSEL</h3>
 
           <p>Über zwei USB Eingänge können Massenspeichermedien bis 2 TB
           angeschlossen werden und liefern ein fortschrittliches System, ohne
@@ -142,18 +150,153 @@
           Software und Line Eingänge: Echo, Phase und Noise.</p>
 
         </div>
+      </div>
 
       <div class="container dealer">
-        <div class="row">
+        <div class="row" data-uk-parallax="opacity: '0,1', viewport: 0.25">
           <div class="col-md-12"><a
-          href="http://alto-professional.de/haendler" target="_blank" ><button
-          type="button" class="btn btn-primary">FINDEN SIE HIER EINEN
-          ALTO-PROFESSIONAL HÄNDLER IN IHERER NÄHE</button></a>
+          href="http://denondj.de/haendler" target="_blank" ><button
+          type="button" class="btn btn-primary">FINDE HIER EINEN
+          DENON DJ HÄNDLER</button></a>
         </div>
       </div>
     </div>
 
-    </body>
+
+
+
+    <!-- ***** PART 03 ****** -->
+
+    <div class="row">
+      <div class="col-md-12"><div class="fullimage" data-uk-parallax="{bgp: 100, viewport: 0.75 }" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">&nbsp;</div></div>
+    </div>
+
+
+    <!-- ***** PART 04 ****** -->
+
+    <div class="row features box" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
+      <div class="col-md-6 col-md-offset-3 textblock">
+        <div class="header">Features</div>
+          <ul>
+            <li>4-Kanal DJ Controller mit Denon DJ Engine Standalone-Technologie</li>
+            <li>Robuste Metallkonstruktion</li>
+            <li>2 USB Eingänge für Benutzung ohne Computer</li>
+            <li>2 Hochauflösende Farbdisplays zeigen Hüllkurven, Cuepoints, Titelanzeige und weitere Informationen – Sowohl für Engine als auch für Serato DJ</li>
+            <li>Professioneller 4-Kanal Digitalmixer mit 2 Mikrofoneingängen und doppelten XLR Ausgängen</li>
+            <li>Drei eingebaute Pre/Post-Fader Effekte für interne digitale und analoge Wiedergabe</li>
+            <li>Anschlagdynamische Performance Pads für Cues, Rolls, Slicer und Samples</li>
+            <li>Stage LinQ Netzwerkverbindung zum Steuern von Licht und Video</li>
+            <li>Serato DVS upgrade-fähig</li>
+            <li>Berührungsempfindliche 5,5“ Jogwheels für akkurates Scratchen und Track-Cueing </li>
+            <li>Austauschbarer Crossfader – mini Innofader kompatibel</li>
+            <li>Inklusive 4-Kanal Serato DJ Vollversion</li>
+            <li>Inklusive Denon DJ Engine 1.5 Software</li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- ***** PART 05 ****** -->
+
+    <div class="row videobox" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false, delay:750}">
+          <div class="row"><div class="col-md-8 col-md-offset-2 videohead"><p>Videos</p></div></div>
+        <div class="row videoblock">
+      <div class="col-xs-12 col-md-4 col-md-offset-2 video" data-uk-parallax="x: '-200,0', opacity: '0,1', viewport: 0.4">
+        <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IwPXXAzuw0g" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 video" data-uk-parallax="x: '200,0', opacity: '0,1', viewport: 0.4">
+        <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4NoDFuRlL1k" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-2 video" data-uk-parallax="x: '-100,0', opacity: '0,1', viewport: 0.4">
+        <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NM7r3WNAYWU" allowfullscreen></iframe>
+          </div>
+      </div>
+
+
+      <div class="col-xs-12 col-md-4 video" data-uk-parallax="x: '100,0', opacity: '0,1', viewport: 0.4" >
+        <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R6b7BSPVESU" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <div class="row videoblock">
+    <div class="col-xs-12 col-md-4 col-md-offset-2 video" data-uk-parallax="x: '-50,0', opacity: '0,1', viewport: 0.4">
+      <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QglBOg-c0iA" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4 video" data-uk-parallax="x: '50,0', opacity: '0,1', viewport: 0.4">
+      <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3dRtFwEG2sQ" allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-4 col-md-offset-2 video" data-uk-parallax="x: '-20,0', opacity: '0,1', viewport: 0.4">
+      <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NM7r3WNAYWU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-md-4 video" data-uk-parallax="x: '20,0', opacity: '0,1', viewport: 0.4" >
+      <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fLnIKUNG9hw" allowfullscreen></iframe>
+        </div>
+    </div>
+
+      </div>
+    </div>
+  </div><!-- ENDE VIDEOBOX-->
+
+<!-- ***** PART 06 ****** -->
+
+  <div class="row box">
+    <div class="col-md-8 col-md-offset-2 header" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">BILDER</div>
+
+    <div class="col-md-8 col-md-offset-2 uk-container-center" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
+      <ul class="uk-list  uk-grid uk-container-center" data-uk-grid-margin>
+        <li class="uk-width-1-2 uk-width-medium-1-4 uk-container-center"><a href="images/slides/01.jpg" data-uk-lightbox><img class="uk-thumbnail-small" src="images/slides/01.jpg" alt="MCX8000"></a></li>
+        <li class="uk-width-1-2 uk-width-medium-1-4 uk-container-center"><a href="images/slides/02.jpg" data-uk-lightbox><img class="uk-thumbnail-small" src="images/slides/02.jpg" alt="MCX8000"></a></li>
+        <li class="uk-width-1-2 uk-width-medium-1-4 uk-container-center"><a href="images/slides/03.jpg" data-uk-lightbox><img class="uk-thumbnail-small" src="images/slides/03.jpg" alt="MCX8000"></a></li>
+        <li class="uk-width-1-2 uk-width-medium-1-4 uk-container-center"><a href="images/slides/04.jpg" data-uk-lightbox><img class="uk-thumbnail-small" src="images/slides/04.jpg" alt="MCX8000"></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ***** PART 07 ****** -->
+
+    <div class="row videobox box">
+
+    <p style="text-align:center">FOOOOOOOTER - insert content here</p>
+    <br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+
+
+
+
+  </body>
 
     <script type="text/javascript">
         $(".eins, .seven").vegas({
