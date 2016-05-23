@@ -5,9 +5,8 @@
         <meta charset="utf-8">
 
       <!-- UI KIT -->
-      <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+      <link rel="stylesheet" href="uikit/css/uikit.almost-flat.min.css" />
       <link rel="stylesheet" href="uikit/css/components/sticky.min.css" />
-      <link rel="stylesheet" href="uikit/css/components/slideshow.min.css" />
 
       <link rel="stylesheet" href="uikit/css/style.css" />
 
@@ -17,11 +16,9 @@
       <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
       <script src="uikit/js/uikit.min.js"></script>
-      <script src="uikit/js/components/sticky.min.js"></script>
       <script src="uikit/js/components/parallax.min.js"></script>
-      <script src="uikit/js/components/slideshow.min.js"></script>
-      <script src="uikit/js/components/slideshow-fx.min.js"></script>
       <script src="uikit/js/components/lightbox.min.js"></script>
+      <script src="uikit/js/components/sticky.min.js"></script>
 
 
       <!-- fullpage -->
@@ -61,17 +58,34 @@
     </head>
     <body>
 
+
+      <div class="uk-width-2-4 uk-push-1-4">
+
+      <nav class="uk-navbar" data-uk-sticky="{animation: 'uk-animation-slide-top'}">
+        <ul class="uk-navbar-nav">
+          <li><div><img src="images/logo_s.png" alt="Logo" /></div></li>
+          <li><a href="#ubersicht" data-uk-smooth-scroll="{offset: 50}">Überischt</a></li>
+          <li><a href="#features" data-uk-smooth-scroll="{offset: 50}">Features</a></li>
+          <li><a href="#videos" data-uk-smooth-scroll="{offset: -50}">Videos</a></li>
+          <li><a href="#bilder" data-uk-smooth-scroll="{offset: 50}">Bilder</a></li>
+          <li><a href="#dealer" data-uk-smooth-scroll="{offset: 50}">Händler</a></li>
+        </ul>
+      </nav>
+      </div>
+
       <!-- ***** PART 01 ****** -->
 
         <div id="fullpage">
           <div class="section eins">
             <div class="header">
 
+
+
                 <div class="row uk-grid">
-                  <div class="uk-width-1-2 uk-width-large-1-1 logo"><img src="images/logo.png" alt="Logo" /></div>
+
                 </div>
                 <div class="row">
-                  <div class="headline"><img src="images/mcx.png" alt="MCX Logo" /><h3>Standalone DJ Player und Controller</h3></div></div>
+                  <div class="headline"><img src="images/mcx.png" alt="MCX Logo"><h3>Standalone DJ Player und Controller</h3></div></div>
                 </div> <!-- ENDE Row -->
           </div> <!-- ENDE Section eins -->
         </div> <!-- ENDE FULLPAGE CONTAINER -->
@@ -80,9 +94,11 @@
 
       <!-- ***** PART 02 ****** -->
 
+      <a name="ubersicht" id="ubersicht"></a>
+      <div class="uk-width-1-1 uk-text-center parthead">Übersicht</div>
+
       <div class="row textblock box">
         <div class="row">
-        <div class="col-md-6 col-md-offset-3 header" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">Übersicht</div></div>
 
         <div class="col-md-6 col-md-offset-3 textblock" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
           <h3>MACH DICH FREI – KEIN COMPUTER BENÖTIGT</h3>
@@ -154,10 +170,7 @@
 
       <div class="container dealer">
         <div class="row" data-uk-parallax="opacity: '0,1', viewport: 0.25">
-          <div class="col-md-12"><a
-          href="http://denondj.de/haendler" target="_blank" ><button
-          type="button" class="btn btn-primary">FINDE HIER EINEN
-          DENON DJ HÄNDLER</button></a>
+          <div class="col-md-12"><a href="#dealer" data-uk-smooth-scroll><button type="button" class="btn btn-primary">FINDE HIER EINEN DENON DJ HÄNDLER</button></a>
         </div>
       </div>
     </div>
@@ -173,10 +186,11 @@
 
 
     <!-- ***** PART 04 ****** -->
+    <a name="features" id="features"></a>
+    <div class="uk-width-1-1 uk-text-center parthead">Features</div>
 
     <div class="row features box" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
       <div class="col-md-6 col-md-offset-3 textblock">
-        <div class="header">Features</div>
           <ul>
             <li>4-Kanal DJ Controller mit Denon DJ Engine Standalone-Technologie</li>
             <li>Robuste Metallkonstruktion</li>
@@ -196,6 +210,8 @@
     </div>
 
     <!-- ***** PART 05 ****** -->
+
+    <a name="videos" id="videos"></a>
 
     <div class="row videobox" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false, delay:750}">
           <div class="row"><div class="col-md-8 col-md-offset-2 videohead"><p>Videos</p></div></div>
@@ -269,8 +285,11 @@
 
 <!-- ***** PART 06 ****** -->
 
+  <a name="bilder" id="bilder"></a>
+
+  <div class="uk-width-1-1 uk-text-center parthead" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">Bilder<a name="bilder" id="bilder"></a></div>
+
   <div class="row box">
-    <div class="col-md-8 col-md-offset-2 header" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">BILDER</div>
 
     <div class="col-md-8 col-md-offset-2 uk-container-center" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">
       <ul class="uk-list  uk-grid uk-container-center" data-uk-grid-margin>
@@ -283,16 +302,371 @@
   </div>
 
 
-  <!-- ***** PART 07 ****** -->
+<!-- ***** PART 07 ****** -->
 
-    <div class="row videobox box">
+    <a name="dealer" id="dealer"></a>
 
-    <p style="text-align:center">FOOOOOOOTER - insert content here</p>
-    <br><br><br><br><br><br><br><br><br>
+    <div class="uk-width-1-1 uk-text-center parthead" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:500}">Händler</div>
 
+    <div class="uk-grid-width-1-1 uk-width-9-10 uk-width-medium-9-10 uk-width-large-6-10 uk-container-center">
+
+<!-- *********** PLZ 0 ************ -->
+
+      <div class="header">PLZ 0</div>
+
+      <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1
+      uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4"
+      data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+        <div>
+          <div class="uk-panel uk-panel-box">
+            <h4>Deejayladen Korn Dresden</h4>
+            <p>Alaunstr. 13 a</p>
+            <p>01099 Dresden</p>
+            <p><a href="http://www.deejayladen.com/de/Denon-MCX8000.html" target="_blank">zur Webseite</a></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-panel uk-panel-box">
+            <h4>Deejayladen Korn Leipzig</h4>
+            <p>Simildenstraße 2</p>
+            <p>004277 Leipzig</p>
+            <p><a href="http://www.deejayladen.com/de/Denon-MCX8000.html" target="_blank">zur Webseite</a></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-panel uk-panel-box">
+            <h4>Deejayladen Korn Oschatz</h4>
+            <p>Thomas Müntzer Straße 4</p>
+            <p>04758 Oschatz</p>
+            <p><a href="http://www.deejayladen.com/de/Denon-MCX8000.html" target="_blank">zur Webseite</a></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="uk-panel uk-panel-box">
+            <h4>Music and More Group</h4>
+            <p>An der Harth 6</p>
+            <p>04416 Markkleeberg</p>
+            <p><a href="http://www.musicandmorestore.de/dj-equipment/dj-controller/denon-mcx-8000.html?listtype=search&searchparam=mcx8000" target="_blank">zur Webseite</a></p>
+          </div>
+        </div>
+
+      <div>
+        <div class="uk-panel uk-panel-box">
+          <h4>Deejayladen Korn Leipzig-Zentrum</h4>
+          <p>Brühl 65</p>
+          <p>04109 Leipzig</p>
+          <p><a href="http://www.deejayladen.com/de/Denon-MCX8000.html" target="_blank">zur Webseite</a></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-panel uk-panel-box">
+          <h4>Musikhaus Markstein</h4>
+          <p>Rudolf Breitscheid Straße 36</p>
+          <p>08118 Hartenstein</p>
+          <p><a href="http://www.markstein.de/epages/Markstein.sf/de_DE/?ViewAction=Innochange_FactFinderSearch&ObjectID=12031268&filterPrice_Currency=EUR~~%E2%82%AC&query=Denon+MCX8000+Premium+4-Kanal+DJ+Controller+mit+4-Kanal+Serato+DJ+Vollversion&userInput=mcx800&queryFromSuggest=true" target="_blank">zur Webseite</a></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="uk-panel uk-panel-box">
+          <h4>PA World</h4>
+          <p>Tharandter Straße 36</p>
+          <p>01159 Dresden</p>
+          <p><a href="http://www.pa-world.de/Denon-MCX8000" target="_blank">zur Webseite</a></p>
+        </div>
+      </div>
+      </div>
+<!-- *********** PLZ 1 ************ -->
+
+        <div class="header plz">PLZ 1</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Electronic Star – Sound & Light Store</h4>
+              <p>Kantstr. 51</p>
+              <p>10625 Berlin</p>
+              <p><a href="http://www.electronic-star.de" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Just Music Berlin</h4>
+              <p>Oranienstr. 140-142</p>
+              <p>10969 Berlin</p>
+              <p><a href="http://www.justmusic.de/de-de/dj-equipment/dj-cd-dj-mediaplayer/dj-mediaplayer/9158322/mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Music Town GmbH</h4>
+              <p>Juri Gagarin Ring 1</p>
+              <p>17036 Neubrandenburg</p>
+              <p><a href="https://www.music-town.de/product_info.php?info=p73404" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>shop2rock</h4>
+              <p>Zierker Straße 9</p>
+              <p>17235 Neustrelitz</p>
+              <p><a href="https://www.shop2rock.de/deejay-veejay/denon-mcx-8000-usb-dj-controller-fuer-serato-dj.html?cache=1463746897" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 2 ************ -->
+
+        <div class="header plz">PLZ 2</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Just Music Hamburg</h4>
+              <p>Feldstrasse 66 / Bunker</p>
+              <p>20359 Hamburg</p>
+              <p><a href="http://www.justmusic.de/de-de/dj-equipment/dj-cd-dj-mediaplayer/dj-mediaplayer/9158322/mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 4 ************ -->
+
+        <div class="header plz">PLZ 4</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Elevator - Future of Music</h4>
+              <p>Schuckertstrasse 28</p>
+              <p>48153 Münster</p>
+              <p><a href="http://www.elevator.de/denon-mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Just Music Dortmund</h4>
+              <p>Martener Hellweg 40</p>
+              <p>44379 Dortmund</p>
+              <p><a href="http://www.justmusic.de/de-de/dj-equipment/dj-cd-dj-mediaplayer/dj-mediaplayer/9158322/mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Just Music Dortmund</h4>
+              <p>Friedhof 6-8</p>
+              <p>45135 Dortund</p>
+              <p><a href="http://www.justmusic.de/de-de/dj-equipment/dj-cd-dj-mediaplayer/dj-mediaplayer/9158322/mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Musik Produktiv</h4>
+              <p>Fuggerstraße 6</p>
+              <p>49479 Ibbenbüren</p>
+              <p><a href="http://www.musik-produktiv.de/denon-mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 5 ************ -->
+
+        <div class="header plz">PLZ 5</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Heba Sound</h4>
+              <p>Hauptstrasse 4</p>
+              <p>56244 Maxsain</p>
+              <p><a href="http://hebasound.de/de/product_info.php?info=p15615_denon-dj-mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Music Store Professional</h4>
+              <p>Istanbulstrasse 22 - 26</p>
+              <p>51103 Köln</p>
+              <p><a href="https://www.musicstore.de/de_DE/EUR/Denon-Electronic-MCX8000-DJ-Controller/art-DJE0006002-000;pgid=AhZgSXWAuqtSRpUqVmRxssuZ00009DRJKYeg" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Music World</h4>
+              <p>Hasselborn 53a - 55</p>
+              <p>59929 Brilon</p>
+              <p><a href="http://www.musicworldbrilon.de/denonmcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+
+<!-- *********** PLZ 6 ************ -->
+
+        <div class="header plz">PLZ 6</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Session</h4>
+              <p>Wiesenstraße 2-6</p>
+              <p>69190 Walldorf</p>
+              <p><a href="http://www.session.de/DENON-MCX8000.html?listtype=search&searchparam=mcx8000" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Session</h4>
+              <p>Hanauer Landstraße 338</p>
+              <p>60314 Frankfurt</p>
+              <p><a href="http://www.session.de/DENON-MCX8000.html?listtype=search&searchparam=mcx8000" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 7 ************ -->
+
+        <div class="header plz">PLZ 7</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Musikhaus Schlaile</h4>
+              <p>Kaiserstr. 175</p>
+              <p>76133 Karlsruhe</p>
+              <p><a href="http://www.schlaile.de/" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Rock Shop</h4>
+              <p>Am Sandfeld 21</p>
+              <p>76149 Karlsruhe</p>
+              <p><a href="https://www.rockshop.de/recording-und-computer/midi-controller/dj-controller/60153/denon-mcx8000" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 8 ************ -->
+
+        <div class="header plz">PLZ 8</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Hieber Lindberg</h4>
+              <p>Sonnenstr. 15</p>
+              <p>80331 München</p>
+              <p><a href="https://www.hieber-lindberg.de/Home.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Just Music</h4>
+              <p>Hanauer Str. 91</p>
+              <p>80993 München</p>
+              <p><a href="http://www.justmusic.de/de-de/dj-equipment/dj-cd-dj-mediaplayer/dj-mediaplayer/9158322/mcx8000.html" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Musikhaus Kirstein</h4>
+              <p>Bernbeurener Str. 11</p>
+              <p>86956 Schongau</p>
+              <p><a href="http://www.kirstein.de" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Weichhart Licht + Ton</h4>
+              <p>Gollier Str. 70</p>
+              <p>80339 München</p>
+              <p><a href="https://www.weichhart.de/de/denon-mcx8000?___SID=U" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
+
+<!-- *********** PLZ 9 ************ -->
+
+        <div class="header plz">PLZ 9</div>
+
+        <div class="uk-grid uk-grid uk-grid-match uk-grid-small uk-grid-width-1-1 uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.uk-panel'}" data-uk-grid-margin>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Pro Lighting</h4>
+              <p>Tannenstr. 9</p>
+              <p>85609 Aschheim</p>
+              <p><a href="http://www.prolighting.de/DJ_Equipment/Digital_DJ/Controller/Denon_DJ_MCX8000_-_4-Kanal_DJ_Controller_i1015_42660_0.htm" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>77records.de</h4>
+              <p>Ringstr. 5</p>
+              <p>94342 Strasskirchen</p>
+              <p><a href="http://www.77records.de/detail/index/sArticle/18880" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Musik Klier</h4>
+              <p>Wölckernstr. 29</p>
+              <p>90459 Nürnberg</p>
+              <p><a href="http://www.musik-klier.de/denon-mcx-8000-mcx-8000" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+
+          <div>
+            <div class="uk-panel uk-panel-box">
+              <h4>Musikhaus Thomann</h4>
+              <p>Treppendorf 30</p>
+              <p>96138 Burgebrach</p>
+              <p><a href="http://www.thomann.de/de/denon_dj_mcx8000.htm?ref=search_rslt_mcx+8000_379499_0" target="_blank">zur Webseite</a></p>
+            </div>
+          </div>
+        </div>
     </div>
 
+  <div class="uk-text-center uk-margin-large"><a href="#" data-uk-smooth-scroll>zurück nach Oben</a></div>
 
+
+
+<!-- ***** PART 08 ****** -->
+
+      <div class="row videobox box">
+
+      <p style="text-align:center">FOOOOOOOTER - insert content here</p>
+      <br><br><br><br><br><br><br><br><br>
+
+      </div>
 
 
 
