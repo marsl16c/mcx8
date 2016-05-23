@@ -59,19 +59,20 @@
     <body>
 
 
-      <div class="uk-width-2-4 uk-push-1-4">
-
-      <nav class="uk-navbar" data-uk-sticky="{animation: 'uk-animation-slide-top'}">
-        <ul class="uk-navbar-nav">
-          <li><div><img src="images/logo_s.png" alt="Logo" /></div></li>
-          <li><a href="#ubersicht" data-uk-smooth-scroll="{offset: 50}">Überischt</a></li>
-          <li><a href="#features" data-uk-smooth-scroll="{offset: 50}">Features</a></li>
-          <li><a href="#videos" data-uk-smooth-scroll="{offset: -50}">Videos</a></li>
-          <li><a href="#bilder" data-uk-smooth-scroll="{offset: 50}">Bilder</a></li>
-          <li><a href="#dealer" data-uk-smooth-scroll="{offset: 50}">Händler</a></li>
-        </ul>
-      </nav>
+      <div class="uk-width-1-1 uk-container-center">
+        <nav class="uk-navbar" data-uk-sticky>
+          <ul class="uk-navbar-nav uk-visible-large">
+            <li><div><a href="#" data-uk-smooth-scroll><img src="images/logo_s.png" alt="Logo" /></a></div></li>
+            <li><a href="#ubersicht" data-uk-smooth-scroll="{offset: 50}">Überischt</a></li>
+            <li><a href="#features" data-uk-smooth-scroll="{offset: 50}">Features</a></li>
+            <li><a href="#videos" data-uk-smooth-scroll="{offset: -50}">Videos</a></li>
+            <li><a href="#bilder" data-uk-smooth-scroll="{offset: 50}">Bilder</a></li>
+            <li><a href="#dealer" data-uk-smooth-scroll="{offset: 50}">Händler</a></li>
+          </ul>
+          <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+        </nav>
       </div>
+
 
       <!-- ***** PART 01 ****** -->
 
@@ -95,7 +96,7 @@
       <!-- ***** PART 02 ****** -->
 
       <a name="ubersicht" id="ubersicht"></a>
-      <div class="uk-width-1-1 uk-text-center parthead">Übersicht</div>
+      <div class="uk-width-1-1 parthead"><div class="uk-width-2-4 uk-push-1-4">Übersicht</div></div>
 
       <div class="row textblock box">
         <div class="row">
@@ -167,10 +168,11 @@
 
         </div>
       </div>
+    </div>
 
       <div class="container dealer">
         <div class="row" data-uk-parallax="opacity: '0,1', viewport: 0.25">
-          <div class="col-md-12"><a href="#dealer" data-uk-smooth-scroll><button type="button" class="btn btn-primary">FINDE HIER EINEN DENON DJ HÄNDLER</button></a>
+          <div class="col-md-12"><a href="#dealer" data-uk-smooth-scroll="{offset: 50}"><button type="button" class="btn btn-primary">FINDE HIER EINEN DENON DJ HÄNDLER</button></a>
         </div>
       </div>
     </div>
@@ -653,7 +655,7 @@
             </div>
           </div>
         </div>
-    </div>
+
 
   <div class="uk-text-center uk-margin-large"><a href="#" data-uk-smooth-scroll>zurück nach Oben</a></div>
 
@@ -669,6 +671,20 @@
       </div>
 
 
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-offcanvas">
+      <li><div><a href="#"><img src="images/logo_s.png" alt="Logo" /></a></div></li>
+        <li><a href="#ubersicht" data-uk-smooth-scroll="{offset: 50}">Überischt</a></li>
+        <li><a href="#features" data-uk-smooth-scroll="{offset: 50}">Features</a></li>
+        <li><a href="#videos" data-uk-smooth-scroll="{offset: -50}">Videos</a></li>
+        <li><a href="#bilder" data-uk-smooth-scroll="{offset: 50}">Bilder</a></li>
+        <li><a href="#dealer" data-uk-smooth-scroll="{offset: 50}">Händler</a></li>
+    </ul>
+
+  </div>
+
+</div>
 
   </body>
 
